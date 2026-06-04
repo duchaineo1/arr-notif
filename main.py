@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 
-NTFY_TOPIC_URL = os.environ.get("NTFY_TOPIC_URL", "https://ntfy.sh/jellyfin-new-item")
+NTFY_TOPIC_URL = os.environ.get("NTFY_TOPIC_URL")
 
 @app.route('/notify', methods=['POST'])
 def notify():
