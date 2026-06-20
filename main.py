@@ -58,7 +58,6 @@ def sonarr():
     message_lines = [
         f"📺 {event_type}",
         f"Series: {series.get('title', 'Unknown')}",
-        f"Type: {series.get('type', 'N/A')}",
         "",
         "Episodes:",
     ]
